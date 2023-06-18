@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4230B14D-E8A5-46C4-944A-CAF0CCE883E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>books</RootNamespace>
+    <AssemblyName>books</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\作业\系统发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>books.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>99EBFE142E89C1E4967A83ED128A0A3D327D05FE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>books_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CHPWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHPWD.Designer.cs">
+      <DependentUpon>CHPWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cuihuan\ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cuihuan\ADD.Designer.cs">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cuihuan\CHX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cuihuan\CHX.Designer.cs">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="DL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DL.Designer.cs">
+      <DependentUpon>DL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\ADD.Designer.cs">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\Change.Designer.cs">
+      <DependentUpon>Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\CHX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\CHX.Designer.cs">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelService.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetMD5Hash.cs" />
+    <Compile Include="jiehuan\ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jiehuan\ADD.Designer.cs">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jiehuan\Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jiehuan\Change.Designer.cs">
+      <DependentUpon>Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jiehuan\CHX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jiehuan\CHX.Designer.cs">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kehu\ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kehu\ADD.Designer.cs">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kehu\Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kehu\Change.Designer.cs">
+      <DependentUpon>Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kehu\CHX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kehu\CHX.Designer.cs">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kehu\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kehu\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leixing\ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leixing\ADD.Designer.cs">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leixing\Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leixing\Change.Designer.cs">
+      <DependentUpon>Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leixing\CHX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leixing\CHX.Designer.cs">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leixing\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leixing\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leixing\dep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leixing\dep.Designer.cs">
+      <DependentUpon>dep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leixing\emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leixing\emp.Designer.cs">
+      <DependentUpon>emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tushu\ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tushu\ADD.Designer.cs">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tushu\Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tushu\Change.Designer.cs">
+      <DependentUpon>Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tushu\check_chx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tushu\check_chx.Designer.cs">
+      <DependentUpon>check_chx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tushu\check_em.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tushu\check_em.Designer.cs">
+      <DependentUpon>check_em.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tushu\CHX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tushu\CHX.Designer.cs">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tushu\chx2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tushu\chx2.Designer.cs">
+      <DependentUpon>chx2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tushu\delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tushu\delete.Designer.cs">
+      <DependentUpon>delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tushu\tsxq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tushu\tsxq.Designer.cs">
+      <DependentUpon>tsxq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userservice.cs" />
+    <Compile Include="ZC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZC.Designer.cs">
+      <DependentUpon>ZC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CHPWD.resx">
+      <DependentUpon>CHPWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cuihuan\ADD.resx">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cuihuan\CHX.resx">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DL.resx">
+      <DependentUpon>DL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\ADD.resx">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\Change.resx">
+      <DependentUpon>Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\CHX.resx">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee\delete.resx">
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jiehuan\ADD.resx">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jiehuan\Change.resx">
+      <DependentUpon>Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jiehuan\CHX.resx">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kehu\ADD.resx">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kehu\Change.resx">
+      <DependentUpon>Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kehu\CHX.resx">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kehu\delete.resx">
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leixing\ADD.resx">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leixing\Change.resx">
+      <DependentUpon>Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leixing\CHX.resx">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leixing\delete.resx">
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leixing\dep.resx">
+      <DependentUpon>dep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leixing\emp.resx">
+      <DependentUpon>emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="tushu\ADD.resx">
+      <DependentUpon>ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tushu\Change.resx">
+      <DependentUpon>Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tushu\check_chx.resx">
+      <DependentUpon>check_chx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tushu\check_em.resx">
+      <DependentUpon>check_em.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tushu\CHX.resx">
+      <DependentUpon>CHX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tushu\chx2.resx">
+      <DependentUpon>chx2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tushu\delete.resx">
+      <DependentUpon>delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tushu\tsxq.resx">
+      <DependentUpon>tsxq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZC.resx">
+      <DependentUpon>ZC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="books_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
